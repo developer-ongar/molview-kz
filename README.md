@@ -14,8 +14,6 @@ npm install
 npm install --save-dev @electron-forge/cli
 npx electron-forge import
 ```
-
-To create a distributable, use your project's new make script, which runs the electron-forge make command.
 ```bat
 npm run make
 ```
