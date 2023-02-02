@@ -11,3 +11,10 @@ Download node_modules
 npm install / yarn install
 ```
 
+#Importing your project into Forge
+You can install Electron Forge's CLI in your project's devDependencies and import your existing project with a handy conversion script.
+
+```bat
+npm install --save-dev @electron-forge/cli
+npx electron-forge import
+```
