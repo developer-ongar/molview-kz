@@ -4,7 +4,7 @@ Desktop app for viewing molecular structures
 ## Kekule.js library 
 https://github.com/partridgejiang/Kekule.js
 
-##Download
+## Download
 
 ```bat
 git clone https://github.com/developer-ongar/molview-kz.git
