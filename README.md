@@ -1,6 +1,6 @@
 # molview-kz
 
-## MacOS -> https://apps.apple.com/kz/app/id1672200115
+### MacOS -> https://apps.apple.com/kz/app/id1672200115
 
 #iPad -> soon
 
