@@ -2,7 +2,7 @@
 
 ### MacOS -> https://apps.apple.com/kz/app/id1672200115
 
-#iPad -> soon
+### iPad -> soon
 
 ## Kekule.js library 
 https://github.com/partridgejiang/Kekule.js
