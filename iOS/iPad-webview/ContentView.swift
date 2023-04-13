@@ -9,15 +9,37 @@ import SwiftUI
 import WebKit
 
 struct ContentView: View {
+    @State private var showWelcomeMessage = true
+    
     var body: some View {
-        HStack {
-            Spacer()
-            WebView(urlString: "https://biochem.kz/moleculahana/index.html")
-            Spacer()
+        ZStack {
+            if showWelcomeMessage {
+                Text("Молекулалық редактор")
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
+                    .padding()
+                    .transition(.move(edge: .top))
+                    .animation(.easeInOut(duration: 1.0))
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                            withAnimation {
+                                self.showWelcomeMessage = false
+                            }
+                        }
+                    }
+            }
+            HStack {
+                Spacer()
+                WebView(urlString: "https://biochem-enu.netlify.app/moleculahana/index.html")
+                Spacer()
+            }
+            .padding()
+            .opacity(showWelcomeMessage ? 0 : 1)
+            .animation(.easeInOut)
         }
-        .padding()
     }
 }
+
 
 struct WebView: UIViewRepresentable {
     var urlString: String
